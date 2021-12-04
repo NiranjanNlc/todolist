@@ -13,7 +13,7 @@ import com.example.nlctodoliist.modal.data.Task
 abstract class TaskDatabase : RoomDatabase()
 {
 
-    abstract fun TaskDao(): TaskDao
+    abstract fun taskDao(): TaskDao
 
     companion object {
         @Volatile private var instance: TaskDatabase? = null
